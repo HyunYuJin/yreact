@@ -13,6 +13,8 @@ function YReact () {
       states.push(initState)
     }
 
+    console.log(states.length, key, states)
+    
     const setState = (newState) => {
       if (states[key] === newState) {
         return
