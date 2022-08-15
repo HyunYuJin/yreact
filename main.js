@@ -9,6 +9,10 @@ function useState (initState) {
   }
 
   const setState = (newState) => {
+    if (states[index] === newState) {
+      return
+    }
+    
     states[index] = newState
 
     render()
